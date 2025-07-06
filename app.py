@@ -11,7 +11,7 @@ load_dotenv()
 @st.cache_resource
 def init_llm():
     return ChatOpenAI(
-        api_key=os.getenv("OPENAI_API_KEY"),
+        
         model="gpt-4o-mini",
         temperature=0.1,
         max_tokens=200  # Increased for better context explanations
